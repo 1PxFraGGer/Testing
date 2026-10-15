@@ -254,3 +254,49 @@
   gap: 12px;
   flex-wrap: wrap;
 }
+
+/* ==========================================
+   DESKTOP PORTRAIT MODE ONLY
+   Landscape remains unchanged
+========================================== */
+
+@media screen and (orientation: portrait) and (min-width: 901px) {
+
+  .ge-home-hero {
+    height: 650px;
+    min-height: 0;
+    margin-bottom: 120px;
+  }
+
+  .ge-home-hero__main {
+    height: 100%;
+  }
+
+  .ge-home-hero__body {
+    padding: 65px 7% 100px;
+    align-items: flex-start;
+  }
+
+  .ge-home-hero__copy {
+    width: 58%;
+  }
+
+  .ge-home-hero h1 {
+    font-size: clamp(40px, 4.5vw, 58px);
+  }
+
+  .ge-home-hero__art {
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .ge-home-hero__note {
+    top: 18%;
+    right: 7%;
+  }
+
+  .ge-home-hero__dots {
+    bottom: 75px;
+  }
+
+}
